@@ -1,0 +1,11 @@
+1,rahul,180
+1,rahul,9
+1,rahul,9000
+1,rahul,18000
+1,rahul,3700
+1,rahul,1400
+1,rahul,85547
+1,rahul,34000
+5,rahul,7.00568e-301
+1,rahul,1.08694e-322
+1,amit,125

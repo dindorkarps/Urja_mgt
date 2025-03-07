@@ -1,0 +1,4 @@
+tea,20
+pohe,25
+idali,40
+dosa,60
