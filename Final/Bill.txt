@@ -11,3 +11,11 @@ Table No: 2
 Id: 3 Item: cofee Qty: 3 Rate: 20
 Id: 2 Item: Poha Qty: 2 Rate: 10
 Order Total Bill: 80
+Customer ID: 2025
+Name: kiran
+Date: 1/2/2
+Table No: 1
+Id: 5 Item: RICE Qty: 2 Rate: 45
+Id: 3 Item: cofee Qty: 2 Rate: 20
+Order Total Bill: 130
+-----------------------------

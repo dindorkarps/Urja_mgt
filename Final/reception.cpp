@@ -6,7 +6,9 @@ vector<Customer> All_cust;
 
 void recep_MenuHandler()
 {
+    cout<<"*******************************************\n";
     cout << "Welcome To Reception " << endl;
+    cout<<"*******************************************\n";
     int ch;
     do
     {
@@ -18,16 +20,18 @@ void recep_MenuHandler()
             case REGISTER_CUSTOMER:
                 cout << "Register_Customer" << endl;
                 register_customer();
+                cout<<"*******************************************\n";
                 break;
             case GENERATE_BILL:
                 cout << "Generate Bill" << endl;
                 show_all_cust_();
                 generate_bill();
-               
+                cout<<"*******************************************\n";
                 break;
             default:
                 cout << "Invalid Option..." << endl;
                 break;
+                cout<<"*******************************************\n";
         }
     } while (ch != 0);
 }
@@ -191,6 +195,7 @@ void write_All_Cust_vector_file( Customer customer  )
             file << "-----------------------------" << endl;   
     }
     cout << "Bill added in file successfully" << endl;
+    cout<<"*******************************************\n";
     file.close();
 }
 

@@ -6,7 +6,9 @@ using namespace std;
 int main()
 {
     int ch;
+    cout<<"*******************************************\n";
 	cout << "~~~~Welcome To Urja Hotel~~~~"<<endl;
+    cout<<"*******************************************\n";
     User user;
     string username, password;
     initialise_table();
@@ -16,6 +18,7 @@ int main()
 		{
 		case EXIT:
 			break;
+            cout<<"*******************************************\n";
 		case MANAGER:
             cout << "Enter your username: ";
             cin >> username;    
@@ -31,6 +34,7 @@ int main()
             {
                 cout << "Login failed" << endl;
             }
+            cout<<"*******************************************\n";
 		break;
         case RECEPTIONIST:
             // cout << "Enter your username: ";
@@ -39,15 +43,14 @@ int main()
             // cin >> password;    
             // if (user.validate_user(username, password))
             // {
-                cout<<"Welcome RECEPTIONIST"<<endl;
+                //cout<<"Welcome RECEPTIONIST"<<endl;
                 recep_MenuHandler();
             // }
             // else
             // {
             //     cout << "Login failed" << endl;
             // }
-
-			
+            cout<<"*******************************************\n";	
 		break;
         case CAPTAIN:
             // cout << "Enter your username: ";
@@ -56,14 +59,14 @@ int main()
             // cin >> password;    
             // if (user.validate_user(username, password))
             // {
-                cout<<"Welcome CAPTAIN"<<endl;
+                //cout<<"Welcome CAPTAIN"<<endl;
                 captain_MenuHandler();
             // }
             // else
             // {
             //     cout << "Login failed" << endl;
             // }
-                
+            cout<<"*******************************************\n";   
 		break;
 		case CHEF:
             // cout << "Enter your username: ";
@@ -72,16 +75,20 @@ int main()
             // cin >> password;    
             // if (user.validate_user(username, password))
             // {
-                cout<<"Welcome CHEF"<<endl;
+                //cout<<"Welcome CHEF"<<endl;
                 chef_MenuHandler();
             //}
             // else
             // {
             //     cout << "Login failed" << endl;
             // }
+            cout<<"*******************************************\n";
             break;
 		}
 	}
+    cout<<"*******************************************\n";
+    return 0;
+    
 }
 
 

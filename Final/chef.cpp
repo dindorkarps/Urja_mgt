@@ -8,6 +8,9 @@ extern vector <Customer> All_cust;
 void chef_MenuHandler()
 {
     int ch;
+    cout<<"*******************************************\n";
+    cout<<"~~~~~~~~~~Welcome To Chef Menu~~~~~~~~~~~~~\n";
+    cout<<"*******************************************\n";
     do
     {
         cout << "0.Exit\n1.See All Pending Orders::\n2. Prepare Order::\n";
@@ -18,20 +21,23 @@ void chef_MenuHandler()
             case CHEF_DISPLAY_PENDING_ORDER:
                             cout << "Check Order" << endl;
                             show_pending_orders();
+                            cout<<"*******************************************\n";
                 break;
                 
             case CHEF_PROCESS_ORDERS:
                             cout << "Process-Cook Order" << endl;
                             process_order();
+                            cout<<"*******************************************\n";
 
                             break;
 
             default:
                 cout << "Invalid Option..." << endl;
+                cout<<"*******************************************\n";
                 break;
             }
     } while (ch != 0);
-
+    cout<<"*******************************************\n";
 }
 
 
@@ -67,6 +73,7 @@ void process_order()
             }
         }
     } 
+    cout<<"*******************************************\n";
 }
 
 void show_pending_orders()
@@ -88,5 +95,6 @@ void show_pending_orders()
                 }
             }
         }
-    } 
+    }
+    cout<<"*******************************************\n"; 
 }

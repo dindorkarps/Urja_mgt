@@ -7,6 +7,9 @@ extern vector <Customer> All_cust;
 void captain_MenuHandler()
 {
     int ch;
+    cout<<"*******************************************\n";
+    cout<<"~~~~~~~~Welcome to Captain Menu~~~~~~~~~~~~\n";
+    cout<<"*******************************************\n";
     do
     {
         cout << "0.Exit\n1. Take Order:\n2. Serve Order:\n";
@@ -23,15 +26,18 @@ void captain_MenuHandler()
             {
                 display_table_order();
             }
+            cout<<"*******************************************\n";
             break;
 
         case CAPTAIN_SERVE_ORDER:
             cout << "Serve Order" << endl;
             serve_order();
+            cout<<"*******************************************\n";
             break;
 
         default:
             cout << "Invalid Option..." << endl;
+            cout<<"*******************************************\n";
             break;
         }
     } while (ch != 0);

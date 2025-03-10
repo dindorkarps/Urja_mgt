@@ -2,7 +2,10 @@
 
 void Menu ::managerMenuHandler()
 {
-    cout<<"Here-1"<<endl;
+    //cout<<"Here-1"<<endl;
+    cout<<"*******************************************\n";
+    cout<<"~~~~~~~~~~~~Welcome to Manager Menu~~~~~~~~\n";
+    cout<<"*******************************************\n";
     int ch;
     while ((ch = managerMenu()) != 0)
     {
@@ -15,15 +18,19 @@ void Menu ::managerMenuHandler()
                 {
                 case ADD_FOOD_MENU:
                         addFoodMenu();
+                        cout<<"*******************************************\n";
                         break;
                 case VIEW_FOOD_MENU:
                         viewFoodMenu();
+                        cout<<"*******************************************\n";
                         break;
                 case EDIT_FOOD_MENU:
                         editFoodMenu();
+                        cout<<"*******************************************\n";
                         break;
                 case DELETE_FOOD_MENU:
                        deleteFoodMenu();
+                       cout<<"*******************************************\n";
                         break;
                 }
             }
@@ -34,9 +41,11 @@ void Menu ::managerMenuHandler()
                 {
                 case MANAGE_VIEW_BILL_DATE_RANGE:
                         //viewBillDateRange();
+                        cout<<"*******************************************\n";
                 break;
                 case MANAGE_VIEW_TODAYS_BILL:
                         //viewTodaysBill();
+                        cout<<"*******************************************\n";
                 break;
                 }  
             }  
@@ -51,6 +60,7 @@ int managerMenu()
 	cout << " \n 1 : MANAGE FOOD MENU \n 2 : MANAGE BILLING \n";
 	cout << "Enter your choice: ";
     cin >> ch;
+    cout<<"*******************************************\n";
 	return ch;
 }
 //------------------------------------------
@@ -60,6 +70,7 @@ int managerfoodMenu()
 	cout << " \n 1 : ADD FOOD MENU \n 2 : VIEW FOOD MENU \n 3 : EDIT FOOD MENU \n 4 : DELETE FOOD MENU \n";
     cout << "Enter your choice: ";
 	cin >> ch;
+    cout<<"*******************************************\n";
 	return ch;
 }
 //------------------------------------------
@@ -73,6 +84,7 @@ void Menu :: addFoodMenu() ////write file
         cout<<"Do you want to add more food items? (1-Y/0-N): ";
         cin>>ch;
     }while(ch == 1);
+    cout<<"*******************************************\n";
 
 
 }
@@ -94,6 +106,7 @@ void Menu::viewFoodMenu() // read file
         }
     }
     file.close();
+    cout<<"*******************************************\n";
 }
 //------------------------------------------
 void Menu::editFoodMenu()
@@ -106,6 +119,7 @@ void Menu::editFoodMenu()
     display_vector(myVector);
     edit_vector(myVector);
     write_vector_file(myVector);
+    cout<<"*******************************************\n";
 }
 //------------------------------------------
 void add_menu_vector(vector<Menu> &myVector)
@@ -126,6 +140,7 @@ void add_menu_vector(vector<Menu> &myVector)
         }
     }
     file.close();
+    cout<<"*******************************************\n";
 }
 //------------------------------------------
 void display_vector(vector<Menu> &myVector)
@@ -134,6 +149,7 @@ void display_vector(vector<Menu> &myVector)
     {
         cout << "ID: " << obj.id << ", Name: " << obj.name << ", Rate: " << obj.rate << "\n";
     }
+    cout<<"*******************************************\n";
 }
 
 void edit_vector(vector<Menu> &myVector)
@@ -157,6 +173,7 @@ void edit_vector(vector<Menu> &myVector)
     {
         cout << "Sorry, food item not found" << endl;
     }
+    cout<<"*******************************************\n";
 }
 
 //--------------------------------------------
@@ -176,6 +193,7 @@ void write_vector_file(vector<Menu> &myVector)
         cout << "Food Menu updated successfully" << endl;
     }
     file.close();
+    cout<<"*******************************************\n";
 }
 //----------------------------------------------
 void Menu :: deleteFoodMenu()
@@ -187,6 +205,7 @@ void Menu :: deleteFoodMenu()
     //display_vector(myVector);
     if(x==1)
         write_vector_file(myVector);
+        cout<<"*******************************************\n";
 }
 int Menu :: delete_vector(vector<Menu> &myVector)
 {
@@ -209,5 +228,6 @@ int Menu :: delete_vector(vector<Menu> &myVector)
     {
         cout << "Sorry, food item not found" << endl;
     }
+    cout<<"*******************************************\n";
     return 0;
 }
