@@ -1,0 +1,13 @@
+Customer ID: 100
+Name: aaa
+Date: 2/2/2025
+Table No: 1
+Id: 1 Item: TATA_TEA Qty: 2 Rate: 15
+Order Total Bill: 30
+Customer ID: 10
+Name: bbb
+Date: 2/2/2025
+Table No: 2
+Id: 3 Item: cofee Qty: 3 Rate: 20
+Id: 2 Item: Poha Qty: 2 Rate: 10
+Order Total Bill: 80

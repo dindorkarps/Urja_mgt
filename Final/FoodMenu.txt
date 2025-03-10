@@ -1,0 +1,4 @@
+1 TATA_TEA 15
+2 Poha 10
+3 cofee 20
+5 RICE 45
